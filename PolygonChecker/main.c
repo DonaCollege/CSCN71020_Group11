@@ -4,7 +4,7 @@
 
 #include "main.h"
 #include "triangleSolver.h"
-#include "rectangleSolver.h"
+#include "rectangleSolver.h" ///gdhgdgd
 
 #define MAXSIZE 50
 
