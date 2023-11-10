@@ -3,7 +3,7 @@
 
 #include "main.h"
 #include "triangleSolver.h"
-#include "rectangleSolver.h"
+#include "rectangleSolver.h" ///gdhgdgd
 
 int side = 0;
 
