@@ -2,6 +2,8 @@
 #include "rectangleSolver.h"
 #include "triangleSolver.h"
 #include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int* getRectanglePoints(int* rectanglePoints) {
     printf_s("Enter the four points of the rectangle (x, y for each point): ");
