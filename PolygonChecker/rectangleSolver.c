@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "main.h"
 #include "rectangleSolver.h"
 #include "triangleSolver.h"
@@ -14,8 +15,15 @@ int* getRectanglePoints(int* rectanglePoints) {
 }
 
 int isRectangle(int* points) {
-    // Implement logic to check if the given points form a rectangle
+    for (int i = 0; i < 8; i++) {
+        if (points[i] < 0) {
+            return 0;
+        }
+    }
+
+return 1; 
 }
+
 
 double distance(int x1, int y1, int x2, int y2) {
     // Helper function to calculate the distance between two points
@@ -32,7 +40,6 @@ void analyzeRectangle(int* rectanglePoints) {
         // Calculate and print the area
         double area = side1 * side2;
 
-        printf_s("The given points form a rectangle.\n");
         printf_s("Perimeter: %.2lf\n", perimeter);
         printf_s("Area: %.2lf\n", area);
     }
